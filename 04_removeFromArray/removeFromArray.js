@@ -1,4 +1,4 @@
-const removeFromArray = function(startArr, censor1, censor2) {
+const removeFromArray = function(startArr, censor1) {
     const initArr = startArr;
         for (i = 0; i < initArr.length; i++) {
             if (initArr[i] === censor1) {
