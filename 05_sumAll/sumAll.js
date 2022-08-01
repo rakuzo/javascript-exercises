@@ -1,7 +1,13 @@
 const sumAll = function(start, finish) {
     let total = 0;
-    for (i = start; i <= finish; i++) {
-        total += i;
+    if (start > finish) {
+        for (let j = start; j >= finish; j--) {
+            total += j;
+        }
+    } else {
+        for (let i = start; i <= finish; i++) {
+            total += i;
+        }
     }
     return total;
 };
