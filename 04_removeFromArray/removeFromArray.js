@@ -1,7 +1,7 @@
-const removeFromArray = function(startArr, censor1) {
+const removeFromArray = function(startArr, censor) {
     const initArr = startArr;
         for (i = 0; i < initArr.length; i++) {
-            if (initArr[i] === censor1) {
+            if (initArr[i] === censor) {
                 initArr.splice(i,1);
             }
         }
