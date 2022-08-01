@@ -9,7 +9,11 @@ const sumAll = function(start, finish) {
             total += i;
         }
     }
-    return total;
+    if (total < 0) {
+        return "ERROR";
+    } else {
+        return total;
+    }
 };
 
 // Do not edit below this line
