@@ -1,6 +1,8 @@
 const sumAll = function(start, finish) {
     let total = 0;
-    if (start > finish) {
+    if (typeof start !== "number" || typeof finish !== "number") {
+        return "ERROR";
+    } else if (start > finish) {
         for (let j = start; j >= finish; j--) {
             total += j;
         }
@@ -9,6 +11,7 @@ const sumAll = function(start, finish) {
             total += i;
         }
     }
+
     if (total < 0) {
         return "ERROR";
     } else {
