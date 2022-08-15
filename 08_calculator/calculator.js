@@ -25,6 +25,7 @@ const factorial = function(item) {
   //     finalNum *= i;
   //     }
   //     return finalNum;
+  // With reduce() way
   const fillArray = [];
   for (let i = 1; i <= item; i++) {
     fillArray.push(i);
