@@ -13,7 +13,7 @@ const findTheOldest = function(items) {
         }
         return (aLive > bLive) ? -1 : 1;
     });
-    return oldest[0];
+    return oldest[0]; //return the first object
 };
 
 // Do not edit below this line
